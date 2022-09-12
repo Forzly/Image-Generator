@@ -1,5 +1,5 @@
 <?php
-// putenv('GDFONTPATH=' . realpath('public_html'));
+apache_setenv('GDFONTPATH=' . realpath('.'));
 
 header('Content-Type: image/png');
 
