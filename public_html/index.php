@@ -1,5 +1,5 @@
 <?php
-//('GDFONTPATH=' . realpath('.'));
+//putenv('GDFONTPATH=' . realpath('.'));
 
 header('Content-Type: image/png');
 
