@@ -9,7 +9,7 @@ $white = imagecolorallocate($image, 255, 255, 255);
 $src = imagecreatefrompng('forzly_bg.png');
 imagecopymerge($image, $src, 0, 0, 0, 0, 500, 500, 100);
 
-$font = 'Ubuntu.ttf';
+$font = 'Ubuntu';
 $fontSize = 20;
 $inputText = (string) isset($_GET['t']) ? $_GET['t'] : 'Lorem ipsum';
 $textArray = explode(' ', $inputText);
