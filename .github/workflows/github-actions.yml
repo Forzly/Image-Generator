@@ -23,6 +23,6 @@ jobs:
       - name: Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: files.000webhost.com
+          server: files.000webhost.com:21
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_KEY }}
