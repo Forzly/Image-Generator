@@ -26,3 +26,4 @@ jobs:
           server: files.000webhost.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_KEY }}
+          server-dir: public_html/
