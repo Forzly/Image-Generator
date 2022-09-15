@@ -20,10 +20,17 @@ jobs:
       - run: echo "🏳️‍⚧️ The workflow is now ready to test your code on the runner."
       - name: Setup PHP
         uses: actions/checkout@v3
-      - name: Deploy
+      - name: Deploy 000webhost
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: files.000webhost.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_KEY }}
           server-dir: public_html/
+      - name: Deploy infinityfree
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ftpupload.net
+          username: ${{ secrets.FTP_USER_INFINITYFREE }}
+          password: ${{ secrets.FTP_KEY_INFINITYFREE }}
+          server-dir: htdocs/
